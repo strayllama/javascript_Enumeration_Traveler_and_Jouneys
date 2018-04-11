@@ -1,0 +1,19 @@
+1/ Can an arrow function expression's this. context change?
+No, an arrows function's this. context is always the when it is defined:
+  "this. always refers to the context in which the function defined. Its context doesn't change."
+
+2/ How do we know what object this. refers to in an arrow function expression body?
+Arrow function retains its definition context, so will be itself
+
+
+3/ Can a function expression's context change?
+yes
+
+4/ How do we know what object this refers to in a function expression body?
+It can be assigned as a property to an object, so then its context becomes that object.
+i.e
+const aFunction = function () {}
+
+ anObject.functionName = functionName;
+
+this.property can be a property of Object and will be accessed by aFunction
